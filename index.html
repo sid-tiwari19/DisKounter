@@ -1,391 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DisKounter</title>
+    <link rel="icon" href="images/logo.png" type="image/icon type" />
     <link rel="stylesheet" href="style.css" />
-    <title>E-commerce Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
-
-<body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/main-logo.png" alt="" / width="125px">
-                    </a>
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Contacts</a></li>
-                        <li><a href="account.html">Account</a></li>
-                    </ul>
-                </nav>
-                <a href="cart.html">
-
-                    <img src="images/cart.png" alt="" width="30px" height="30px" />
-                </a>
-                <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="images/logo.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li id="lg-bag">
+            <a href="cart.html"
+              ><i class="bi bi-cart3" style="font-size: 25px"></i
+            ></a>
+          </li>
+          <a href="#" id="close">
+            <i class="bi bi-box-arrow-right" style="font-size: 25px"></i
+          ></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"
+          ><i class="bi bi-cart3" style="font-size: 25px"></i
+        ></a>
+        <i id="bar" class="bi bi-list" style="font-size: 25px"></i>
+      </div>
+    </section>
+    <section id="hero">
+      <h4>Trade in-offer</h4>
+      <h2>Super value deals</h2>
+      <h1>On all products</h1>
+      <p>Save more with coupons & upto 60%off!!</p>
+      <button class="shop">Shop Now</button>
+    </section>
+    <section id="feature" class="section-p1">
+      <div class="fe-box">
+        <img src="images/f1.png" alt="" />
+        <h6>Free Shipping</h6>
+      </div>
+      <div class="fe-box">
+        <img src="images/f2.png" alt="" />
+        <h6>Online Order</h6>
+      </div>
+      <div class="fe-box">
+        <img src="images/f3.png" alt="" />
+        <h6>Save Money</h6>
+      </div>
+      <div class="fe-box">
+        <img src="images/f4.png" alt="" />
+        <h6>Promtions</h6>
+      </div>
+      <div class="fe-box">
+        <img src="images/f5.png" alt="" />
+        <h6>Happy Sell</h6>
+      </div>
+      <div class="fe-box">
+        <img src="images/f6.png" alt="" />
+        <h6>F24/7 support</h6>
+      </div>
+    </section>
+    <section id="product1" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Summer Collection New Modern Design</p>
+      <div class="pro-cont">
+        <div class="pro">
+          <img src="images/products/f1.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Change your lens, <br />Change your Story.</h1>
-                    <p>
-                        When words becomes unclear, I shall focus with photographs.<br />When
-                        Images becomes inadequate, I shall be content with silence.
-                    </p>
-                    <a href="" class="btn">Explore Now &#8594;</a>
-                </div>
-                <div class="col-2">
-                    <img src="images/main.png" alt="" />
-                </div>
-            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
         </div>
-    </div>
-
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/category1.png" alt="" />
-                </div>
-                <div class="col-3">
-                    <img src="images/category2.png" alt="" />
-                </div>
-                <div class="col-3">
-                    <img src="images/category3.png" alt="" />
-                </div>
+        <div class="pro">
+          <img src="images/products/f2.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
             </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
         </div>
-    </div>
+        <div class="pro">
+          <img src="images/products/f3.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/f4.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/f5.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/f6.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/f7.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/f8.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="banner" class="section-m1">
+      <h2>Upto <span>60% Off </span> on all T-shirts & Accessories</h2>
+      <button class="normal">Explore More</button>
+    </section>
+    <section id="product1" class="section-p1">
+      <h2>New Arrivals</h2>
+      <p>Summer Collection New Modern Design</p>
+      <div class="pro-cont">
+        <div class="pro">
+          <img src="images/products/n1.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/n2.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/n3.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/n4.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/n5.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/n6.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/n7.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="images/products/n8.jpg" alt="" />
+          <div class="des">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirt</h5>
+            <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h4>Rs 699/-</h4>
+          </div>
+          <a href="#"
+            ><i class="bi bi-cart-plus" style="font-size: 20px"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="sm-banner" class="section-p1">
+      <div class="banner-box">
+        <h4>crazy deals</h4>
+        <h2>buy 1 get 1 free</h2>
+        <span>The best classic dress is on sale</span>
+        <button class="white">Learn More</button>
+      </div>
+      <div class="banner-box bb2">
+        <h4>Spring/summer</h4>
+        <h2>Upcoming season</h2>
+        <span>The best classic dress is on sale</span>
+        <button class="white">Collection</button>
+      </div>
+    </section>
+    <section id="banner3">
+      <div class="banner-box">
+        <h2>SEASONAL SALE</h2>
+        <h3>Winter Collection -50% off</h3>
+      </div>
+      <div class="banner-box bb4">
+        <h2>New Footwear Collection</h2>
+        <h3>spring / summer 2023</h3>
+      </div>
+      <div class="banner-box bb5">
+        <h2>SEASONAL SALE</h2>
+        <h3>New Trendy Prints</h3>
+      </div>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up for Newsletters</h4>
+        <p>
+          Get E-mail updates about our latest shop and
+          <span>special offers.</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="images/logo.png" alt="" />
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> adrak lassan</p>
+        <p><strong>contact:</strong> 6969696969</p>
+        <p><strong>Hours:</strong> raat 10 baje se subah 6 baje</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="bi bi-facebook" style="font-size: 25px"></i>
+            <i class="bi bi-instagram" style="font-size: 25px"></i>
+            <i class="bi bi-twitter" style="font-size: 25px"></i>
+            <i class="bi bi-whatsapp" style="font-size: 25px"></i>
+          </div>
+        </div>
+      </div>
 
-    <div class="small-container">
-        <h2 class="title">Featured Products</h2>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
         <div class="row">
-            <div class="col-4">
-                <a href="product-details.html">
-
-                    <img src="images/pro1-nike-3695.png" alt="" />
-                </a>
-                <a href="product-details.html">
-
-                    <h4>Cavaliers SweatShirt by Nike</h4>
-                </a>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs.3695</p>
-            </div>
-            <div class="col-4">
-                <img src="images/pro2-Polo Ralph Lauren-12990.png" alt="" />
-                <h4>Polo Ralph Lauren</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>Rs.12990</p>
-            </div>
-            <div class="col-4">
-                <img src="images/pro3-allen solly - 2369.png" alt="" />
-                <h4>Allen Solly Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs.2369</p>
-            </div>
-            <div class="col-4">
-                <img src="images/pro4-h&m-1499.png" alt="" />
-                <h4>H&M SweatShirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs.1499</p>
-            </div>
+          <img src="images/app.jpg" alt="" />
+          <img src="images/play.jpg" alt="" />
         </div>
+        <p>Secured Payment Gateways</p>
+        <img src="images/pay.png" alt="" />
+      </div>
 
-        <h2 class="title">Latest Products</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="images/pro5-calvinK-4199.png" alt="" />
-                <h4>Calvin Klein Sweater</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs.4199</p>
-            </div>
-            <div class="col-4">
-                <img src="images/pro6-SELECTED-11499.png" alt="" />
-                <h4>SELECTED Blazer</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>Rs.11499</p>
-            </div>
-            <div class="col-4">
-                <img src="images/pro7-anubhutte-988.png" alt="" />
-                <h4>Anubhutte Dress</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs.988</p>
-            </div>
-            <div class="col-4">
-                <img src="images/pro8-biba-3039.png" alt="" />
-                <h4>Biba Dress</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs.3039</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="images/pro9-dorothy perkins-1245.png" alt="" />
-                <h4>Dorothy Perkins Skirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs.1245</p>
-            </div>
-            <div class="col-4">
-                <img src="images/pro10-bobbi brown-5600.png" alt="" />
-                <h4>Bobbi Brown Cream</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>Rs.5600</p>
-            </div>
-            <div class="col-4">
-                <img src="images/pro11-AccessHer-39500.png" alt="" />
-                <h4>Access Her necklace</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs.39500</p>
-            </div>
-            <div class="col-4">
-                <img src="images/pro12-fossil-14296.png" alt="" />
-                <h4>Fossil Smart Watch</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Rs.14296</p>
-            </div>
-        </div>
-    </div>
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/shopping.png" alt="" class="offer-img" />
-                </div>
-                <div class="col-2">
-                    <p>Exclusively Available on NILARA</p>
-                    <h1>Apple watch series 5</h1>
-                    <small>
-                        With a new Always-On Retina display, Apple Watch Series 5 is
-                        always there for you. To monitor your health, help you stay fit
-                        and keep you connected.
-                    </small>
-                    <a href="#" class="btn">Buy Now &#8594;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="testimonial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                        temporibus non sapiente nemo autem illo! Ea sunt corporis officia
-                        inventore.
-                    </p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                    </div>
-                    <img src="images/user-1.jpg" alt="">
-                    <h3>Nilay Hirpara</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                        temporibus non sapiente nemo autem illo! Ea sunt corporis officia
-                        inventore.
-                    </p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                    </div>
-                    <img src="images/user-2.jpg" alt="">
-                    <h3>Pranav Badgal</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                        temporibus non sapiente nemo autem illo! Ea sunt corporis officia
-                        inventore.
-                    </p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                    </div>
-                    <img src="images/user-3.jpg" alt="">
-                    <h3>Navnit Kumar</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="brands">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <img src="images/logo-1.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-2.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-3.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-4.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-5.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download our App</h3>
-                    <p>Download App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png" alt="">
-                        <img src="images/app-store.png" alt="">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="images/main-logo.png" alt="">
-                    <p>Our purpose is to give the best quality product to the customer and bring them back and make them
-                        happy.</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">Copyright &copy; 2022 - www.mywebsite.com</p>
-        </div>
-    </div>
-
-
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
-
-        MenuItems.style.maxHeight = "0px";
-
-        function menutoggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "200px";
-            }
-            else {
-                MenuItems.style.maxHeight = "0px";
-            }
-        }
-    </script>
-
-
-
-</body>
-
+      <div class="copyright">
+        <p>©️ 2023, Sid</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

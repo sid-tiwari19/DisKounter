@@ -1,218 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DisKounter</title>
+    <link rel="icon" href="images/logo.png" type="image/icon type" />
     <link rel="stylesheet" href="style.css" />
-    <title>E-commerce Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
-
-<body>
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/main-logo.png" alt="" / width="125px">
-                </a>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="images/logo.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li id="lg-bag">
+            <a class="active" href="cart.html"
+              ><i class="bi bi-cart3" style="font-size: 25px"></i
+            ></a>
+          </li>
+          <a href="#" id="close">
+            <i class="bi bi-box-arrow-right" style="font-size: 25px"></i
+          ></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"
+          ><i class="bi bi-cart3" style="font-size: 25px"></i
+        ></a>
+        <i id="bar" class="bi bi-list" style="font-size: 25px"></i>
+      </div>
+    </section>
+    <section id="page-header" class="about-header">
+      <h2>#Cart</h2>
+      <p>Don't forget to use coupons to save upto 60%!!</p>
+    </section>
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#"><i class="bi bi-trash3-fill"></i></a>
+            </td>
+            <td><img src="images/products/f1.jpg" alt="" /></td>
+            <td>Cartoon Astronaut T-Shirt</td>
+            <td>Rs 699</td>
+            <td><input type="number" min="1" value="1" /></td>
+            <td>&#8377 699</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><i class="bi bi-trash3-fill"></i></a>
+            </td>
+            <td><img src="images/products/f2.jpg" alt="" /></td>
+            <td>Cartoon Astronaut T-Shirt</td>
+            <td>Rs 699</td>
+            <td><input type="number" min="1" value="1" /></td>
+            <td>&#8377 699</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><i class="bi bi-trash3-fill"></i></a>
+            </td>
+            <td><img src="images/products/f3.jpg" alt="" /></td>
+            <td>Cartoon Astronaut T-Shirt</td>
+            <td>Rs 699</td>
+            <td><input type="number" min="1" value="1" /></td>
+            <td>&#8377 699</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
             </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Contacts</a></li>
-                    <li><a href="account.html">Account</a></li>
-                </ul>
-            </nav>
-            <a href="cart.html">
-
-                <img src="images/cart.png" alt="" width="30px" height="30px" />
-            </a>
-            <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
         </div>
-    </div>
-    </div>
-    <div class="small-container cart-page">
-
-        <table>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Sub Total</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="images/buy-1.png" alt="">
-                        <div>
-                            <p>Cavaliers SweatShirt by Nike</p>
-                            <small>Rs.3695</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td> <input type="number" value="1"></td>
-                <td>Rs.3695</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="images/pro15-harmon kardon-14990.png" alt="">
-                        <div>
-                            <p>Harmon kardon Headphones</p>
-                            <small>Rs.14990</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td> <input type="number" value="1"></td>
-                <td>Rs.14990</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="images/pro12-fossil-14296.png" alt="">
-                        <div>
-                            <p>Fossil Smart Watch</p>
-                            <small>Rs.14296</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td> <input type="number" value="1"></td>
-                <td>Rs.14296</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="images/pro11-AccessHer-39500.png" alt="">
-                        <div>
-                            <p>Access Her Necklace</p>
-                            <small>Rs.39500</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td> <input type="number" value="1"></td>
-                <td>Rs.39500</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="images/pro14-The Light Lamp-21360.png" alt="">
-                        <div>
-                            <p>The Light Lamp</p>
-                            <small>Rs.21360</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td> <input type="number" value="1"></td>
-                <td>Rs.21360</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="images/pro16-steve madden - 8999.png" alt="">
-                        <div>
-                            <p>Steve Madden Heels</p>
-                            <small>Rs.8999</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td> <input type="number" value="1"></td>
-                <td>Rs.8999</td>
-            </tr>
-        </table>
-
-        <div class="total-price">
+        <div id="subtotal">
+            <h3>Cart Total</h3>
             <table>
                 <tr>
-                    <td>Sub Total</td>
-                    <td>Rs.102840</td>
+                    <td>Cart Subtotal</td>
+                    <td>&#8377 2097</td>
                 </tr>
                 <tr>
-                    <td>Tax</td>
-                    <td>Rs.5713.34</td>
+                    <td>Shiping</td>
+                    <td>Free</td>
                 </tr>
                 <tr>
-                    <td>Grand Total</td>
-                    <td>Rs.108553.34</td>
+                    <td><strong>Total</strong></td>
+                    <td><strong>&#8377 2097</strong></td>
                 </tr>
             </table>
+            <button class="normal">Proceed to checkout</button>
         </div>
-
-    </div>
-
-
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download our App</h3>
-                    <p>Download App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="images/play-store.png" alt="">
-                        <img src="images/app-store.png" alt="">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="images/main-logo.png" alt="">
-                    <p>Our purpose is to give the best quality product to the customer and bring them back and make them
-                        happy.</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">Copyright &copy; 2022 - www.mywebsite.com</p>
+    </section>
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="images/logo.png" alt="" />
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> adrak lassan</p>
+        <p><strong>contact:</strong> 6969696969</p>
+        <p><strong>Hours:</strong> raat 10 baje se subah 6 baje</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="bi bi-facebook" style="font-size: 25px"></i>
+            <i class="bi bi-instagram" style="font-size: 25px"></i>
+            <i class="bi bi-twitter" style="font-size: 25px"></i>
+            <i class="bi bi-whatsapp" style="font-size: 25px"></i>
+          </div>
         </div>
-    </div>
+      </div>
 
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="images/app.jpg" alt="" />
+          <img src="images/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="images/pay.png" alt="" />
+      </div>
 
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
-
-        MenuItems.style.maxHeight = "0px";
-
-        function menutoggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "200px";
-            }
-            else {
-                MenuItems.style.maxHeight = "0px";
-            }
-        }
-    </script>
-
-
-
-</body>
-
+      <div class="copyright">
+        <p>©️ 2023, Sid</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
